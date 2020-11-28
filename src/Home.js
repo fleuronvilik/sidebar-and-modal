@@ -12,7 +12,7 @@ const Home = () => {
 
   return (
     <>
-      <button className="sidebar-toggle" onClick={toggle}>
+      <button className="sidebar-toggle" onClick={toggle} aria-label="Show Sidebar">
         <i><FaBars /></i>
       </button>
       {!modal &&

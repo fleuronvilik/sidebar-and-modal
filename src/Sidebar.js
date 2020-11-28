@@ -12,7 +12,7 @@ const Sidebar = () => {
     <aside className={`sidebar ${sidebar && "show-sidebar"}`}>
       <header className="sidebar-header">
         <img className="logo" src={logo} alt=""/>
-        <button className="close-btn" onClick={toggle}>
+        <button className="close-btn" onClick={toggle} aria-label="Close Sidebar">
           <FaTimes />
         </button>
       </header>
@@ -28,8 +28,12 @@ const Sidebar = () => {
       </nav>
 
       <nav className="social-icons">
-        {social.map(({ id, icon, url }) => {
-          return (<a key={id} href={url}>{icon}</a>)
+        {social.map(({ id, icon, url, text }) => {
+          return (
+            <a key={id} href={url} title={text}>
+              {icon}
+            </a>
+          )
         })}
       </nav>
     </aside>

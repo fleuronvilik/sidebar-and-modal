@@ -47,27 +47,32 @@ export const links = [
 export const social = [
   {
     id: 1,
-    url: 'https://www.twitter.com',
+    url: 'https://www.facebook.com',
     icon: <FaFacebook />,
+    text: 'Facebook'
   },
   {
     id: 2,
     url: 'https://www.twitter.com',
     icon: <FaTwitter />,
+    text: 'Twitter'
   },
   {
     id: 3,
-    url: 'https://www.twitter.com',
+    url: 'https://www.linkedin.com',
     icon: <FaLinkedin />,
+    text: 'Linkedin'
   },
   {
     id: 4,
-    url: 'https://www.twitter.com',
+    url: 'https://www.behance.net',
     icon: <FaBehance />,
+    text: 'Behance',
   },
   {
     id: 5,
-    url: 'https://www.twitter.com',
+    url: 'https://www.sketch.com',
     icon: <FaSketch />,
+    text: 'Sketch'
   },
 ];
